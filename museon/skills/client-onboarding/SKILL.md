@@ -1,6 +1,6 @@
 ---
-name: "開始使用 MuseON"
-description: "讓你的 AI 帶你了解 MuseON 能幫什麼忙，從今天最想處理的一件事開始。"
+name: "client-onboarding"
+description: "開始使用 MuseON：讓你的 AI 帶你了解 MuseON 能幫什麼忙，從今天最想處理的一件事開始。"
 ---
 
 # 開始使用 MuseON

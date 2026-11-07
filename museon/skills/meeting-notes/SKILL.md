@@ -1,6 +1,6 @@
 ---
-name: "會議記錄與追蹤"
-description: "用 MuseON 的方法，讓你的 AI 陪你把會議內容整理成結論、承諾與待辦，接著核對後續進度。"
+name: "meeting-notes"
+description: "會議記錄與追蹤：用 MuseON 的方法，讓你的 AI 陪你把會議內容整理成結論、承諾與待辦，接著核對後續進度。"
 ---
 
 # 會議記錄與追蹤

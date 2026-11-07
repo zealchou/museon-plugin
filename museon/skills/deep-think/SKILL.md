@@ -1,6 +1,6 @@
 ---
-name: "把問題想清楚"
-description: "用 MuseON 的方法，讓你的 AI 陪你釐清問題、比較取捨，或從不同觀點挑戰想法。"
+name: "deep-think"
+description: "把問題想清楚：用 MuseON 的方法，讓你的 AI 陪你釐清問題、比較取捨，或從不同觀點挑戰想法。"
 ---
 
 # 把問題想清楚

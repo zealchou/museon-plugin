@@ -1,6 +1,6 @@
 ---
-name: "提案與報價"
-description: "用 MuseON 的方法，讓你的 AI 陪你釐清方案與條件，整理有依據的提案和報價。"
+name: "proposal-quote"
+description: "提案與報價：用 MuseON 的方法，讓你的 AI 陪你釐清方案與條件，整理有依據的提案和報價。"
 ---
 
 # 提案與報價

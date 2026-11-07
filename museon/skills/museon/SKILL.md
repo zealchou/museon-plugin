@@ -1,6 +1,6 @@
 ---
-name: "MuseON"
-description: "讓你的 AI 依你今天想處理的事，找到合適的 MuseON 用途入口。"
+name: "museon"
+description: "MuseON：讓你的 AI 依你今天想處理的事，找到合適的 MuseON 用途入口。"
 ---
 
 # MuseON

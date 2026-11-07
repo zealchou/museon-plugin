@@ -1,6 +1,6 @@
 ---
-name: "找回與整理筆記"
-description: "讓你的 AI 找回你在 MuseON 記過的重點，也能把這次的心得整理成日後好查找的筆記。"
+name: "knowledge-lattice"
+description: "找回與整理筆記：讓你的 AI 找回你在 MuseON 記過的重點，也能把這次的心得整理成日後好查找的筆記。"
 ---
 
 # 找回與整理筆記

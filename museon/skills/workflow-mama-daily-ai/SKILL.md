@@ -1,6 +1,6 @@
 ---
-name: "家庭日常幫手"
-description: "讓你的 AI 陪你安排備餐、接送與親子相處，把家裡每天要做的事理出頭緒。"
+name: "workflow-mama-daily-ai"
+description: "家庭日常幫手：讓你的 AI 陪你安排備餐、接送與親子相處，把家裡每天要做的事理出頭緒。"
 ---
 
 # 家庭日常幫手

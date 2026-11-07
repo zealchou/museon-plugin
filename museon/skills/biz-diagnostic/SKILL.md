@@ -1,6 +1,6 @@
 ---
-name: "生意診斷與規劃"
-description: "用 MuseON 的方法，讓你的 AI 陪你找出生意卡在哪裡，整理市場機會、合作風險與下一步方案。"
+name: "biz-diagnostic"
+description: "生意診斷與規劃：用 MuseON 的方法，讓你的 AI 陪你找出生意卡在哪裡，整理市場機會、合作風險與下一步方案。"
 ---
 
 # 生意診斷與規劃
