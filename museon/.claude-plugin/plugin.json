@@ -1,0 +1,12 @@
+{
+  "name": "museon",
+  "version": "0.1.0",
+  "description": "讓你的 AI 依你今天想處理的事，找到合適的 MuseON 用途入口。",
+  "author": {
+    "name": "MuseON"
+  },
+  "skills": "./skills/",
+  "privacyPolicyUrl": "https://muse-on.biz/privacy",
+  "icon": "./assets/icon.png",
+  "license": "LicenseRef-MuseON-All-Rights-Reserved"
+}

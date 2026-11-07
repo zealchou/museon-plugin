@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "museon": {
+      "type": "http",
+      "url": "https://muse-on.biz/mcp",
+      "oauth": {
+        "clientId": "museon-claude-code",
+        "callbackPort": 47653
+      }
+    }
+  }
+}

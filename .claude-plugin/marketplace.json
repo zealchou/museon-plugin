@@ -1,0 +1,13 @@
+{
+  "name": "museon",
+  "owner": {
+    "name": "MuseON",
+    "url": "https://lin.ee/OYwE0KA"
+  },
+  "plugins": [
+    {
+      "name": "museon",
+      "source": "./museon"
+    }
+  ]
+}
