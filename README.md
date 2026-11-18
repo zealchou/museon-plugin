@@ -8,7 +8,7 @@ MuseON 是一組讓 AI 陪你把事情做完整的方法與工具：把問題想
 
 這個套件做兩件事：一是教你的 AI「什麼時候該用哪個 MuseON 方法」（skills）；二是把你的 AI 連到 MuseON 服務（MCP 連線）。方法內容由 MuseON 在你使用時一步一步提供，不放在這個套件裡；你的 AI 只會使用你本人登入並允許的功能。資料如何使用與保存，請看 [隱私頁](https://muse-on.biz/privacy)。
 
-套件共 27 支 skills：12 支用途入口，加上 15 支工作流與工具技能。直接說出你要做的事，AI 會先找對應的技能；說不清楚時，從用途入口開始。
+套件共 26 支 skills：12 支用途入口，加上 14 支工作流與工具技能。直接說出你要做的事，AI 會先找對應的技能；說不清楚時，從用途入口開始。
 
 ## 想做什麼，找哪支技能
 
@@ -26,12 +26,15 @@ MuseON 是一組讓 AI 陪你把事情做完整的方法與工具：把問題想
 | 想被直接點破一個落差、拿到一個可以拒絕的小實驗 | 挑戰教練（`challenge-coach`） |
 | 整理目前的狀態與調整方向（已有內外各八項能量分數） | 能量解讀（`energy-reading`） |
 | 開始一件要好幾步的工作之前，先把目標說清楚（是否開放以連線當次列出的為準） | 需求釐清（`intake`） |
-| 做一支短影音（問清目的與規格、找切入點、挑鉤子、給分鏡腳本；是否開放以連線當次列出的為準） | 短影音爆款（`short-video-hook`） |
 | 看某個客戶專案的活動洞察 | 活動洞察包（`event-pack`） |
 | 查看自己的商會名片 | 商會名片（`member-card`） |
 | 連結遊戲帳號、查存檔與規則 | 結晶物語（`crystal-story`） |
 
 ## 12 支用途入口
+
+### MuseON（總入口）
+
+讓你的 AI 依你今天想處理的事，找到合適的 MuseON 用途入口。
 
 ### 開始使用 MuseON
 
@@ -86,14 +89,8 @@ MuseON 是一組讓 AI 陪你把事情做完整的方法與工具：把問題想
 intake：需求釐清，開始一件要好幾步的工作之前，用最多一題把目標、對象和成功標準說清楚，並建議要走哪幾條工作流；說不清楚就先慢慢整理問題，說直接做就放行。例：會員說「幫我做洞察包」，先用一題問清楚是哪個品牌、想達成什麼，記成需求卡再開始。
 
 - 何時用：會員要做洞察包、數位提案或決策，但客戶的品牌、品類、目標還沒整理成需求卡時先用；一次一題問清楚、存成需求卡供後續帶入。
+- 做完可接：market-research、business-diagnosis、decision、digital-proposal
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `intake`，一步一步依 MuseON 當次回傳進行。
-
-### 短影音爆款（`short-video-hook`）
-
-短影音爆款：一次問一題問清目的與影片規格，對上品牌與三重漏斗，用熱搜找切入點，每輪 5 個混搭鉤子讓你挑到滿意，再給分鏡、腳本、台詞與審計成績單。
-
-- 何時用：只在 museon.method.step 當次列出 short-video-hook、而且你要做一支短影音（問清目的與影片規格、找熱搜切入點、挑鉤子、給分鏡與腳本）時使用；是否已開放以你連線當次列出的為準。
-- 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `short-video-hook`，一步一步依 MuseON 當次回傳進行。
 
 ### 七步成思（`seven-steps`）
 
@@ -109,7 +106,7 @@ intake：需求釐清，開始一件要好幾步的工作之前，用最多一�
 市場研究：幫你整理市場、客群與競品資料，分清楚已知證據與待查問題。例：「研究台灣小型咖啡店的訂閱服務市場。」
 
 - 何時用：會員要了解市場、客群或競品，並要分清已知證據與待查問題時用。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、business-diagnosis
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、business-diagnosis、intake
 - 做完可接：business-diagnosis、decision、digital-proposal
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `market-research`，一步一步依 MuseON 當次回傳進行。
 
@@ -118,7 +115,7 @@ intake：需求釐清，開始一件要好幾步的工作之前，用最多一�
 依目前業務階段與可查證資料，逐步釐清創業投資或營運決策，整理待驗問題與下一步。
 
 - 何時用：會員在創業、投資或營運的決策點，要依業務階段與可查證資料逐步釐清、整理待驗問題時用。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、market-research
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、market-research、intake
 - 做完可接：market-research、decision、digital-proposal
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `business-diagnosis`，一步一步依 MuseON 當次回傳進行。
 
@@ -127,7 +124,7 @@ intake：需求釐清，開始一件要好幾步的工作之前，用最多一�
 決策：幫你比較選項、釐清取捨並安排之後的回看。例：「比較自行招人與委外這兩個方案。」
 
 - 何時用：會員已有至少五個選項要比較取捨、選定一個並安排之後回看時用。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、market-research、business-diagnosis
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、market-research、meeting-notes、roundtable、business-diagnosis、intake
 - 做完可接：seven-steps、meeting-notes、roundtable、reflection-review、digital-proposal
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `decision`，一步一步依 MuseON 當次回傳進行。
 
@@ -137,7 +134,7 @@ intake：需求釐清，開始一件要好幾步的工作之前，用最多一�
 
 - 何時用：會員想把同一個議題交給不同策略角色交叉檢視時用；這是模擬分析，最後取捨仍由會員決定。
 - 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、decision
-- 做完可接：digital-proposal
+- 做完可接：decision、digital-proposal
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `roundtable`，一步一步依 MuseON 當次回傳進行。
 
 ### 數位提案（`digital-proposal`）
@@ -145,7 +142,8 @@ intake：需求釐清，開始一件要好幾步的工作之前，用最多一�
 數位提案：由接案判斷、數位健檢、品牌概念、消費路徑飛輪、媒體操作計畫、預算與時程、老手審查七棒接力，整理數位宣傳提案骨架。
 
 - 何時用：會員要替客戶做數位宣傳或廣告提案時用；七棒接力（接案判斷、數位健檢、品牌概念、消費路徑飛輪、媒體操作計畫、預算與時程、老手審查）；正文、品牌、名單、決策留在會員自己的 AI，不傳主機。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：market-research、roundtable、business-diagnosis、decision
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：market-research、meeting-notes、roundtable、business-diagnosis、decision、intake
+- 做完可接：meeting-notes、reflection-review
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `digital-proposal`，一步一步依 MuseON 當次回傳進行。
 
 ### 會議記錄（`meeting-notes`）
@@ -153,8 +151,8 @@ intake：需求釐清，開始一件要好幾步的工作之前，用最多一�
 會議內容在你自己的工具整理；這裡只核對流程狀態，不能替全文品質背書。
 
 - 何時用：會員有一場會議的錄音、逐字稿或訊息要整理成記錄與待辦時用；會議正文留在會員自己的工具，不傳主機。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、decision
-- 做完可接：seven-steps
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、decision、digital-proposal
+- 做完可接：seven-steps、decision、reflection-review、digital-proposal
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `meeting-notes`，一步一步依 MuseON 當次回傳進行。
 
 ### 反思回顧（`reflection-review`）
@@ -162,7 +160,7 @@ intake：需求釐清，開始一件要好幾步的工作之前，用最多一�
 reflection-review：反思回看，把一次經驗整理成本人確認的學習與可選下一步；保存及回看只認真回執，公開卡另外預覽。
 
 - 何時用：會員要回看一次經驗或一個做過的決定，整理成本人確認的學習與可選下一步時用。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：decision、relationship-situation、challenge-coach
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：energy-reading、meeting-notes、decision、relationship-situation、challenge-coach、digital-proposal
 - 做完可接：seven-steps、energy-reading、relationship-situation、challenge-coach
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `reflection-review`，一步一步依 MuseON 當次回傳進行。
 
@@ -171,8 +169,8 @@ reflection-review：反思回看，把一次經驗整理成本人確認的學習
 人際局勢與親子，把觀察、推測和自己的選擇分清，留下一句能說的話；私人保存與回看須另取真回執。
 
 - 何時用：會員碰到人際局勢或親子互動，要分清觀察、推測與自己的選擇，並留下一句能說的話時用。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：reflection-review
-- 做完可接：reflection-review
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：energy-reading、reflection-review、challenge-coach
+- 做完可接：reflection-review、challenge-coach
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `relationship-situation`，一步一步依 MuseON 當次回傳進行。
 
 ### 挑戰教練（`challenge-coach`）
@@ -180,8 +178,8 @@ reflection-review：反思回看，把一次經驗整理成本人確認的學習
 挑戰教練：由你選擇溫和提醒、直接點破或毫不留情，預設直接點破；先顧安全，再點破一個落差、交一個可拒絕的小實驗。
 
 - 何時用：會員要被直接點破一個落差、拿到一個可拒絕的小實驗時用；先問會員要溫和提醒、直接點破或毫不留情；涉及安全時先顧安全。
-- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、reflection-review
-- 做完可接：reflection-review
+- 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：seven-steps、energy-reading、reflection-review、relationship-situation
+- 做完可接：reflection-review、relationship-situation
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `challenge-coach`，一步一步依 MuseON 當次回傳進行。
 
 ### 能量解讀（`energy-reading`）
@@ -190,6 +188,7 @@ reflection-review：反思回看，把一次經驗整理成本人確認的學習
 
 - 何時用：會員已給內外各八項能量分數、要整理目前狀態與調整方向時用；只有缺分數才補問。
 - 可帶入本人已保存的前序成果（本人明選才帶入，沒有也能直接開始）：reflection-review
+- 做完可接：reflection-review、relationship-situation、challenge-coach
 - 怎麼用：對你的 AI 說出需求即可；AI 會呼叫 `museon.method.step`，method 帶 `energy-reading`，一步一步依 MuseON 當次回傳進行。
 
 ### 活動洞察包（`event-pack`）
@@ -258,7 +257,7 @@ codex mcp add museon --url https://muse-on.biz/mcp
 codex mcp list
 ```
 
-依該版 Codex 的 OAuth 提示完成本人登入。再將本套件 `skills/` 下全部 27 個獨立資料夾（12 支用途入口＋15 支工作流與工具技能）放進使用者 `~/.agents/skills/` 或專案 `.agents/skills/`，開新 session 核對載入。已有 plugin 連線時，先辨識現有設定，避免重複設定同一 MCP。
+依該版 Codex 的 OAuth 提示完成本人登入。再將本套件 `skills/` 下全部 26 個獨立資料夾（12 支用途入口＋14 支工作流與工具技能）放進使用者 `~/.agents/skills/` 或專案 `.agents/skills/`，開新 session 核對載入。已有 plugin 連線時，先辨識現有設定，避免重複設定同一 MCP。
 
 操作參考：[Claude plugin 安裝](https://code.claude.com/docs/en/plugins/install)、[Claude 網頁 plugin](https://support.claude.com/en/articles/13837440-use-plugins-in-claude)、[ChatGPT developer mode](https://help.openai.com/en/articles/12584461-developer-mode-and-full-mcp-connectors-in-chatgpt)、[OpenAI MCP](https://developers.openai.com/learn/docs-mcp)。
 
@@ -286,6 +285,7 @@ AI 只使用當次連線實際列出、而且你已授權的功能；功能沒�
 
 ## 版本紀錄
 
+- 0.1.8：各工作流的「可帶入／做完可接」與 MuseON 服務給你的 AI 的導引重新對齊；用途入口一節補上總入口的說明。
 - 0.1.5：每個 MuseON 工作流與工具都有自己的技能（需求釐清、七步成思、市場研究、商業診斷、決策、圓桌、數位提案、會議記錄、反思回顧、人際處境、挑戰教練、能量解讀、活動洞察包、商會名片、結晶物語）；說明改寫成較完整的使用指南。
 - 0.1.4：入口改為會員明確要求記下筆記、摘要、目標或待辦時才保存；沒開口就不存，保存關閉時依工具回應告知。
 - 0.1.3：用途入口同步教練與決策分流。
