@@ -13,16 +13,16 @@ description: "提案與報價：用 MuseON 的方法，讓你的 AI 陪你釐清
 
 ## method 對照
 
-- `proposal`：形成有依據的提案，包含尚待釐清的方案、需求與條件。
-- `quote`：價格與成本、預算不相容時，調整範圍、補證據或停止，不自行改數字湊合。
-- `biz-chain`：由生意入口銜接；進入提案與報價時在本用途接續，不把既有內容重問一遍。
+- `proposal`：目前沒有對應的專用工作流，用 `museon.method.step` 叫不到它；要替客戶做數位宣傳或廣告提案，用已啟用的 `digital-proposal`；其餘由你的 AI 依上面的路由，陪會員形成有依據的提案，包含尚待釐清的方案、需求與條件。
+- `quote`：目前沒有對應的專用工作流，叫不到它；由你的 AI 依上面的路由陪會員整理報價，價格與成本、預算不相容時，調整範圍、補證據或停止，不自行改數字湊合。
+- `biz-chain`：目前沒有對應的專用工作流，叫不到它；由生意入口銜接，進入提案與報價時在本用途接續，不把既有內容重問一遍。
 
 ## 連線與完成條件
 
 只使用當次連線實際列出且本人已授權的 MCP 能力；method 識別字是用途對照，不是固定工具清單。方法不可用時說明尚未接通，不假稱已執行。方法內容留主機，依工具當次回傳繼續。外掛只查回會員本人在 MuseON 已有且來源明確的自有紀錄；來源不明或混合資料不讀取。不讀取或擷取 Claude 的記憶、聊天歷史、對話摘要或使用者檔案；不以對話建立畫像或改變跨次行為。會員明確要求記下筆記、摘要、目標或待辦時，才可用 museon.secretary.record.write 保存；沒開口就不存。保存關閉時，照工具回應告知會員，不自行繞過。不得呼叫查後名片整理能力；本人授權不解除上述讀取、畫像與名片整理限制。對外動作依本人當次授權，工具成功才報完成。
 
 <!-- BEGIN MUSEON ENTRY GUIDE -->
-MuseON 使用導引｜入口說明版本 0.1.8。來源：zealchou/museon-plugin。指南：museon://guide/usage；公開說明：https://muse-on.biz/mcp-agent.md。
+MuseON 使用導引｜入口說明版本 0.1.9。來源：zealchou/museon-plugin。指南：museon://guide/usage；公開說明：https://muse-on.biz/mcp-agent.md。
 
 沿用既有用途入口分流：人際處境由 athena／deep-think 導向 relationship-situation，挑戰教練由 deep-think／daily-pilot 導向 challenge-coach，反思回顧由 daily-pilot／knowledge-lattice 導向 reflection-review，需要做選擇由 deep-think 導向 decision；其餘入口遇到這些需求也沿此分派，不新增入口，方法以當次已授權目錄為準。
 
